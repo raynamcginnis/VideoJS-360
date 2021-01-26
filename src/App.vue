@@ -1,18 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <video-player :options="videoOptions"/>
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import VideoPlayer from './components/VideoPlayer.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    VideoPlayer
+  }, 
+  data() {
+		return {
+			videoOptions: {
+				autoplay: false,
+        controls: true,
+        preload: auto,
+				sources: [
+					{
+						src:
+							"https://videojs-vr.netlify.app/samples/eagle-360.mp4",
+						type: "video/mp4"
+					}
+				]
+			}
+		};
+	}
 }
 </script>
 
