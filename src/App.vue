@@ -24,7 +24,8 @@ export default {
 				sources: [
 					{
 						src:
-							"https://videojs-vr.netlify.app/samples/eagle-360.mp4",
+              "https://videojs-vr.netlify.app/samples/eagle-360.mp4",
+              // "http://media.w3.org/2010/05/sintel/trailer.mp4",
 						type: "video/mp4"
 					}
 				]

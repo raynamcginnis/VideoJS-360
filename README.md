@@ -1,12 +1,11 @@
 # playposit-360
-This proof of concept web application renders an HTML-based interation of a 360 video.
+This proof of concept web application renders an HTML-based interation of a 360 video using Vue, VideoJS-VR and Veutify.
 
 ## Technologies
 - Vue.js
 - VideoJS
 - VideoJS-VR
 - Veutify
-
 
 ## Project Specifications
 - 360 video is navigable by mouse/trackpad
@@ -16,6 +15,9 @@ This proof of concept web application renders an HTML-based interation of a 360 
 - The camera can move Up, Down, Left and Right
 - Below the video frame, you can see the current position of the camera dynamically
 - Below the video frame, you can adjust the position within the 360 spatia video of the interaction dynamically
+
+## Testing
+- VideoJS-Errors
 
 ## Future Ideas
 

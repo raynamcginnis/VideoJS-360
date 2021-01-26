@@ -1,7 +1,7 @@
 <template>
 <div>
     <v-container fluid>
-        <v-row justify="center pa-md-4">
+        <v-row justify="center" class="pa-md-4">
       <video class="video-js" ref="videoPlayer" width="800px">
           <!-- <source src="https://videojs-vr.netlify.app/samples/eagle-360.mp4" type="video/mp4"> -->
       </video>
@@ -12,6 +12,10 @@
 
 <script>
 import videojs from 'video.js'
+
+// var player = videojs('my-video');
+
+// player.vr({projection: '360'});
 
 export default {
   name: "VideoPlayer",
