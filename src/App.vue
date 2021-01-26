@@ -1,23 +1,26 @@
 <template>
-  <div id="app">
-    <video-player :options="videoOptions"/>
-    </div>
+  <v-app>
+    <v-main>
+      <VideoPlayer :options="videoOptions"/>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import VideoPlayer from './components/VideoPlayer.vue'
+import VideoPlayer from './components/VideoPlayer';
 
 export default {
   name: 'App',
+
   components: {
-    VideoPlayer
-  }, 
+    VideoPlayer,
+  },
+
   data() {
 		return {
 			videoOptions: {
 				autoplay: false,
         controls: true,
-        preload: auto,
 				sources: [
 					{
 						src:
@@ -28,16 +31,5 @@ export default {
 			}
 		};
 	}
-}
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

@@ -1,9 +1,12 @@
 <template>
 <div>
-      <video class="video-js" ref="videoPlayer">
+    <v-container fluid>
+        <v-row justify="center pa-md-4">
+      <video class="video-js" ref="videoPlayer" width="800px">
           <!-- <source src="https://videojs-vr.netlify.app/samples/eagle-360.mp4" type="video/mp4"> -->
-          <!-- <source src="https://www.youtube.com/watch?v=Vi0G9OgwCys" type="video/mp4"> -->
       </video>
+      </v-row>
+      </v-container>
     </div>
 </template>
 
